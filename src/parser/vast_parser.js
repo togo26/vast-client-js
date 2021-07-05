@@ -23,6 +23,8 @@ export class VASTParser extends EventEmitter {
    * @constructor
    */
   constructor() {
+
+    console.log('VASTParser TEST');
     super();
 
     this.remainingAds = [];
