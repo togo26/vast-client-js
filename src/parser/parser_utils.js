@@ -178,9 +178,11 @@ function splitVAST(ads) {
  * @param  {Ad} wrapper - The wrapper Ad.
  * @return {void}
  */
- function mergeWrapperAdData(unwrappedAd, wrapper) {
-  console.log('mergeWrapperAdData ~ unwrappedAd', unwrappedAd);
-  console.log('mergeWrapperAdData ~ wrapper', wrapper);
+function mergeWrapperAdData(unwrappedAd, wrapper) {
+  // eslint-disable-next-line no-console
+  console.log('mergeWrapperAdData ~ unwrappedAd', unwrappedAd.creatives.length);
+  // eslint-disable-next-line no-console
+  console.log('mergeWrapperAdData ~ wrapper', wrapper.creatives.length);
   unwrappedAd.errorURLTemplates = wrapper.errorURLTemplates.concat(
     unwrappedAd.errorURLTemplates
   );
